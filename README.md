@@ -45,6 +45,7 @@ Remember to sanitize user inputs / api outputs through some xss filter!
 - [] Switch hashing algorithm to bcrypt
 - [] Redis or Mongo blacklist after token is no longer used
 - [] Move configuration to a .env instead of .json
+- [] Validate env config values on boot
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
