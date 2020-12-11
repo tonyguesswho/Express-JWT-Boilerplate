@@ -5,7 +5,7 @@
 [Join the discord](https://discord.gg/8PmWZKb)
 ## Foreword
 
-> I created this initially as a learning platform to pick up JWT and stateless authentication however because of how useful it eventually became i decided to post it on a repo to share as a JWT example in express.
+> I created this initially as a learning platform to pick up JWT and stateless authentication however because of how useful it eventually became i decided to post it on a repo to share as a scalable JWT example in express.
 
 ## Features
 
