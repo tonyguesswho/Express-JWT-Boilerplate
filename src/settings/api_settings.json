@@ -1,0 +1,40 @@
+{
+  "api" : {
+    "port" : 3000
+  },
+
+  "mongodb" : {
+    "host" : "localhost",
+    "port" : "27017",
+    "username" : "",
+    "password" : "",
+    "database" : "express-jwt-boilerplate",
+    "reconnect_attempts": 10,
+    "reconnect_interval": 1000
+  },
+
+  "jwt" : {
+    "secret": "put a cool master secret here",
+    "algorithm": "HS256",
+    "expiresIn": "1d",
+    "ignored_routes" : [
+      "/auth",
+      "/auth/register",
+      "/auth/login",
+      "/",
+      "/healthcheck"]
+  },
+
+  "rate_limit" : {
+    "general" : {
+      "window_ms": 600000,
+      "max": 2000,
+      "collection_name": "generalRateRecords"
+    },
+    "auth" : {
+      "window_ms": 60000,
+      "max": 20,
+      "collection_name": "authRateRecords"
+    }
+  }
+}
