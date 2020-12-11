@@ -44,7 +44,7 @@ Remember to sanitize user inputs / api outputs through some xss filter!
 ## TODO
 - [] Switch hashing algorithm to bcrypt
 - [] Redis or Mongo blacklist after token is no longer used
-
+- [] Move configuration to a .env instead of .json
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
