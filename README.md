@@ -38,7 +38,10 @@
 - short-uuid (uuid generation for users)
 
 ## Usage
-I all the relevant config stuff in `./src/settings/api_settings.json`.
+I put all the relevant config stuff in `./src/settings/api_settings.json`.
+
+Remember to sanitize user inputs / api outputs through some xss filter!
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
