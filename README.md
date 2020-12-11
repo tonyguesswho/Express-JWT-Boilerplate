@@ -31,7 +31,7 @@
 - morgan (logging)
 - express-rate-limit (ratelimiting endpoints)
 - rate-limit-mongo (ratelimiting store)
-- argon2 (password Encryption)
+- bcryptjs (password Encryption)
 - jsonwebtoken (jwt creation & signing)
 - express-jwt (jwt validation)
 - short-uuid (uuid generation for users)
@@ -46,7 +46,6 @@ I put all the relevant config stuff in `./src/settings/api_settings.json`.
 Remember to sanitize user inputs / api outputs through some xss filter!
 
 ## TODO
-- [] Switch hashing algorithm to bcrypt
 - [] Redis or Mongo blacklist after token is no longer used
 - [] Move configuration to a .env instead of .json
 - [] Validate env config values on boot
