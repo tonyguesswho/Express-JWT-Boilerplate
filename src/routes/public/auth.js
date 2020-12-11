@@ -76,7 +76,7 @@ module.exports = client => {
     const validation = await argon2.verify(userEntryCheck.password, req.body.password)
     if (!validation) return res.status(400).json({ type: 'database', errors: ['Invalid email or password.'] })
 
-    // Create and assign a JWT
+    // Create and sign a JWT containing the user ID
     const token = jwt.sign(
       { uuid: userEntryCheck.uuid },
       client.apiSettings.jwt.secret,
