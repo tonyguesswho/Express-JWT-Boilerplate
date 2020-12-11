@@ -36,6 +36,10 @@
 - express-jwt (jwt validation)
 - short-uuid (uuid generation for users)
 
+## Dev Dependencies
+- standard (programming principles & linter)
+- jest (unit testing)
+
 ## Usage
 I put all the relevant config stuff in `./src/settings/api_settings.json`.
 
