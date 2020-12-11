@@ -31,7 +31,7 @@
 - morgan (logging)
 - express-rate-limit (ratelimiting endpoints)
 - rate-limit-mongo (ratelimiting store)
-- argon2 (password Encryption)
+- bcryptjs (password Encryption)
 - jsonwebtoken (jwt creation & signing)
 - express-jwt (jwt validation)
 - short-uuid (uuid generation for users)
