@@ -2,7 +2,6 @@
  [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/GagePielsticker/Express-JWT-Boilerplate/blob/master/LICENSE.md) 
  ![GitHub last commit](https://img.shields.io/github/last-commit/gagepielsticker/Express-JWT-Boilerplate) 
 
-[Join the discord](https://discord.gg/8PmWZKb)
 ## Foreword
 
 > I created this initially as a learning platform to pick up JWT and stateless authentication however because of how useful it eventually became i decided to post it on a repo to share as a scalable JWT example in express.
