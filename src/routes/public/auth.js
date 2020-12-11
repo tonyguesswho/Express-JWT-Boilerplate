@@ -7,7 +7,7 @@
 const express = require('express')
 const router = express.Router()
 const { body, validationResult } = require('express-validator')
-const argon2 = require('argon2')
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const shortuid = require('short-uuid')()
 
@@ -42,7 +42,7 @@ module.exports = client => {
     }
 
     // Hash our password
-    const hash = await argon2.hash(req.body.password)
+    const hash = await bcrypt.hash(req.body.password, 10)
     if (!hash) return res.status(500).json({ type: 'server', errors: ['Internal server error.'] })
 
     // Write user account to database
@@ -73,7 +73,7 @@ module.exports = client => {
     }
 
     // Check password
-    const validation = await argon2.verify(userEntryCheck.password, req.body.password)
+    const validation = await bcrypt.compare(req.body.password, userEntryCheck.password)
     if (!validation) return res.status(400).json({ type: 'database', errors: ['Invalid email or password.'] })
 
     // Create and sign a JWT containing the user ID
